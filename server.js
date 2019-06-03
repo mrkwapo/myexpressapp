@@ -3,7 +3,7 @@ const app = express()
 const port = process.env.PORT||8080
 
 app.use('/', express.static("public"));
-//this always uses the first matching the toute used in browser
+//this always uses the first matching the route used in browser
 app.get('/', function(req, res){
     res.send('I love my life')
 })
